@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>컨버스 캔버스화</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">소개</a></li>
+                <li><a href="#section2">사진</a></li>
+                <li><a href="#section3">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section1">
+        <h2>소개</h2>
+        <p>안녕하세요! 여성 4cm 통굽 스니커즈 운동화 컨버스 캔버스화 입니다.</p>
+    </section>
+
+    <section id="section2">
+        <h2>사진</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo1DeF6XAiS9sELTR-xmQxAmYdYPnCY05F5SzxRqfxw5jxgmB3CNikalvH6Q-PIYXuZ5s&usqp=CAU" alt="이미지 설명">
+    </section>
+
+    <section id="section3">
+        <h2>연락처</h2>
+        <p>문의 사항이나 의견이 있으시면 아래 연락처로 연락해주세요.</p>
+        <address>
+            이메일: <a href="mailto:qhqldml@naver.com">qhqldml@naver.com</a><br>
+            전화번호: 010-9480-1339
+        </address>
+        <button id="contactButton">문의하기</button>
+    </section>
+
+    <script>
+        document.getElementById("contactButton").addEventListener("click", function() {
+            alert("문의가 접수되었습니다. 감사합니다!");
+        });
+    </script>
+</body>
+</html>
